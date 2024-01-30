@@ -13,8 +13,8 @@ fun main(){
     doLogin("wkc","114514",response)
 }
 
-const val DB_SAVE_USER_NAME="wkc"
-const val DB_SAVE_USER_PWD="114514"
+private const val DB_SAVE_USER_NAME="wkc"
+private const val DB_SAVE_USER_PWD="114514"
 
 private fun doLogin(userName:String,userPwd:String,serverResponse:(String,Int)->Unit){
     if(DB_SAVE_USER_NAME==userName && DB_SAVE_USER_PWD==userPwd){
